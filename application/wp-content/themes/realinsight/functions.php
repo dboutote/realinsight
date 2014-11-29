@@ -31,7 +31,15 @@
  * @since RealInsight 1.0
  */
 if ( ! class_exists( '\RealInsight\Theme_Functions' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
-	require get_template_directory() . '/inc/class.theme-functions.php';
+	require get_template_directory() . '/inc/class_theme-functions.php';
+}
+
+if ( ! class_exists( 'MetaBox_PreFooter' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
+	require get_template_directory() . '/inc/class_mb_prefooter.php';
+}
+
+if ( ! class_exists( 'MetaBox_SubHeader' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
+	require get_template_directory() . '/inc/class_mb_subheader.php';
 }
 
 show_admin_bar(false);
@@ -114,7 +122,18 @@ function rinsight_widgets_init()
 add_action( 'widgets_init', 'rinsight_widgets_init' );
 
 
-
+if ( ! function_exists( 'debug' ) ) 
+{
+	function debug($var){
+		echo "\n<pre style=\"text-align:left;\">";
+		if( is_array($var) || is_object($var)){
+			print_r($var);
+		} else {
+			var_dump($var);
+		}
+		echo "</pre>\n";
+	}
+}
 
 
 

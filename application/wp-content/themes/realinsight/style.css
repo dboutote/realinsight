@@ -78,7 +78,7 @@ a.paper-clip:before {
 	width: 40px;
 	height: 40px;
 	margin-right: 15px;
-	background: url(../images/paper-clip.svg) no-repeat center center;
+	background: url(images/paper-clip.svg) no-repeat center center;
 	background-size: contain;
 }
 a:hover {
@@ -129,10 +129,10 @@ a.btn:after {
 	position: relative;
 	top: -2px;
 	left: 13px;
-	background: #a7a7a6 url(../images/plus-btn.png) no-repeat center center;
+	background: #a7a7a6 url(images/plus-btn.png) no-repeat center center;
 }
 a.btn.active:after {
-	background-image: url(../images/minus-btn.png)
+	background-image: url(images/minus-btn.png)
 }
 a.btn:hover, a.btn.active {
 	color: #8b8c8b;
@@ -150,10 +150,10 @@ a.btn.blue:hover, a.btn.blue.active {
 	background-color: #008bd1;
 }
 a.btn.touch:after {
-	background-image: url(../images/touch-btn.png);
+	background-image: url(images/touch-btn.png);
 }
 a.btn.video:after {
-	background-image: url(../images/video-btn.png);
+	background-image: url(images/video-btn.png);
 }
 .preload {
 	display: none;
@@ -290,7 +290,7 @@ header :not(.hero).container {
 	z-index: 9999;
 }
 .hero .right .lc-container {
-	background: url(../images/life-cycle-00.png) no-repeat center center;
+	background: url(images/life-cycle-00.png) no-repeat center center;
 	background-size: contain;
 	-webkit-transition: background 250ms ease-out;
 	-moz-transition: background 250ms ease-out;
@@ -299,25 +299,25 @@ header :not(.hero).container {
 	transition: background 250ms ease-out;
 }
 .hero .right .lc-container.loan {
-	background-image: url(../images/life-cycle-01.png) !important;
+	background-image: url(images/life-cycle-01.png) !important;
 }
 .hero .right .lc-container.surveillance {
-	background-image: url(../images/life-cycle-02.png) !important;
+	background-image: url(images/life-cycle-02.png) !important;
 }
 .hero .right .lc-container.watchlist {
-	background-image: url(../images/life-cycle-03.png) !important;
+	background-image: url(images/life-cycle-03.png) !important;
 }
 .hero .right .lc-container.transfer {
-	background-image: url(../images/life-cycle-04.png) !important;
+	background-image: url(images/life-cycle-04.png) !important;
 }
 .hero .right .lc-container.liquidation {
-	background-image: url(../images/life-cycle-05.png) !important;
+	background-image: url(images/life-cycle-05.png) !important;
 }
 .hero .right .lc-container.reo {
-	background-image: url(../images/life-cycle-06.png) !important;
+	background-image: url(images/life-cycle-06.png) !important;
 }
 .hero .right .lc-container.sold {
-	background-image: url(../images/life-cycle-07.png) !important;
+	background-image: url(images/life-cycle-07.png) !important;
 }
 .title-bar {
 	background-color: #d4d2d2;
@@ -358,7 +358,7 @@ header :not(.hero).container {
 .features-menu {
 	text-align: center;
 	margin-top: 40px;
-	background: url(../images/features-bg.png) repeat-x center 40px;
+	background: url(images/features-bg.png) repeat-x center 40px;
 }
 .features-menu .option {
 	text-align: center;
@@ -489,7 +489,7 @@ ul.icon-list li:first-child {
 	top: 50%;
 	width: 54px;
 	height: 54px;
-	background: #686969 url(../images/arrow-left.png) no-repeat center center;
+	background: #686969 url(images/arrow-left.png) no-repeat center center;
 	-webkit-border-radius: 55px;
 	border-radius: 55px;
 	-webkit-transform: translateY(-50%);
@@ -509,7 +509,7 @@ ul.icon-list li:first-child {
 }
 .client-controls #right {
 	right: -100px;
-	background-image: url(../images/arrow-right.png);
+	background-image: url(images/arrow-right.png);
 }
 #clients {
 	margin-top: 40px;
@@ -614,7 +614,7 @@ input[type="radio"].css-checkbox:checked + label.css-label {
 	background-position: 0 -15px;
 }
 label.css-label {
-	background-image: url(../images/radio-btn.svg);
+	background-image: url(images/radio-btn.svg);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -738,7 +738,7 @@ h2 {
 	display: block;
 	width: 30px;
 	height: 30px;
-	background: #fff url(../images/mobile-menu.png) no-repeat center center;
+	background: #fff url(images/mobile-menu.png) no-repeat center center;
 	background-size: contain;
 	position: absolute;
 	right: 30px;
