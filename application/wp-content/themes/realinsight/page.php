@@ -21,9 +21,11 @@ get_header(); ?>
 
 			<?php the_title( '<h1>', '</h1>'); ?>
 
-			<ul id="breadcrumbs">
-				<li>[breadcrumbs]</li>				
-			</ul>
+			<?php if ( function_exists( 'breadcrumb_trail' ) ) { ?>
+				<div id="breadcrumbs">
+					<?php breadcrumb_trail(array( 'show_browse' => false, 'separator'=>'&middot;' )); ?>
+				</div>
+			<?php } ?>
 
 		</div>
 

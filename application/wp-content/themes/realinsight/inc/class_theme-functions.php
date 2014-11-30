@@ -337,7 +337,7 @@ class Theme_Functions
 
 		wp_register_style(
 			'nivo-default',
-			get_template_directory_uri()  . '/themes/default/default.css',
+			get_template_directory_uri()  . '/css/themes/default/default.css',
 			array('reset','lightSlider','nivo-lightbox'),
 			'1.0',
 			'all'

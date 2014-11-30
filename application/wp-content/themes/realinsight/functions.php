@@ -135,7 +135,49 @@ if ( ! function_exists( 'debug' ) )
 	}
 }
 
+/**
+ * A lightweight nav menu for sibling pages
+ */
+function show_siblings($post_id = null){
+	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
 
+	if( in_the_loop() ) {
+		global $post;
+		$current_post = $post;
+	} else {
+		$current_post = get_post($post_id);		
+	}
+
+	if( !$current_post || is_null($current_post) || !$current_post->post_parent ) {
+		return;
+	}
+
+	$siblings = get_pages(array(
+		'sort_order' => 'ASC',
+		'sort_column' => 'menu_order',
+		'parent' => $current_post->post_parent,
+	));
+
+
+	if( empty($siblings) ){
+		return;
+	}
+
+	$out = '<ul id="left-menu" class="sibling-list">';
+	
+	foreach( $siblings as $sib ){
+		$link = get_permalink($sib->ID);		
+		if( $sib->ID === $post_id ){
+			$out .= '<li><a href="'.$link.'" class="active">' . $sib->post_title . '</a></li>';
+		} else {
+			$out .= '<li><a href="'.$link.'">' . $sib->post_title . '</a></li>';
+		}
+	}
+	
+	$out .= '</ul>';
+
+	echo $out;
+}
 
 
 

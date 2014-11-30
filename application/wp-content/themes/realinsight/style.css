@@ -865,3 +865,19 @@ span[itemprop=telephone] a {
 #links .top ul li a:visited {
 	text-transform: lowercase;
 }
+
+#breadcrumbs { font-size: 90%; }
+
+#breadcrumbs a, #breadcrumbs a:visited {
+	font-weight: 300;
+	font-style: normal;
+}
+
+#breadcrumbs span {	
+	display: inline-block;	
+}
+
+#breadcrumbs .sep {
+    font-weight: bold;
+    margin: 0 10px;
+}

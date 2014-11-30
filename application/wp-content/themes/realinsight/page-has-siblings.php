@@ -1,13 +1,6 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme and one
- * of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query,
- * e.g., it puts together the home page when no home.php file exists.
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
+ * Template Name: Has Siblings
  *
  * @package WordPress
  * @subpackage RealInsight
@@ -24,9 +17,11 @@ get_header(); ?>
 
 			<?php the_title( '<h1>', '</h1>'); ?>
 
-			<ul id="breadcrumbs">
-				<li>[breadcrumbs]</li>				
-			</ul>
+			<?php if ( function_exists( 'breadcrumb_trail' ) ) { ?>
+				<div id="breadcrumbs">
+					<?php breadcrumb_trail(array( 'show_browse' => false, 'separator'=>'&middot;' )); ?>
+				</div>
+			<?php } ?>
 
 		</div>
 
@@ -41,21 +36,26 @@ get_header(); ?>
 				<?php if( has_subheader() ) { ?>
 					<h2><?php display_subheader(); ?></h2>
 				<?php }; ?>
+				
+				<aside>		
+					<?php show_siblings(); ?>
+				</aside>
+				
+				<div class="right-content">
+					<div class="entry-content">
+						<?php
+						the_content();
+						wp_link_pages( array(
+							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
+							'after'       => '</div>',
+							'link_before' => '<span>',
+							'link_after'  => '</span>',
+						) );
 
-				<div class="entry-content">
-					<?php
-					the_content();
-					wp_link_pages( array(
-						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
-						'after'       => '</div>',
-						'link_before' => '<span>',
-						'link_after'  => '</span>',
-					) );
-
-					edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
-					?>
-				</div><!-- .entry-content -->
-
+						edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
+						?>
+					</div><!-- /.entry-content -->
+				</div><!-- /.right-content -->
 			</article><!-- #post-## -->
 
 		</div> <!-- /.container -->
