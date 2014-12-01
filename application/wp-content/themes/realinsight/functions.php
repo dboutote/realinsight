@@ -42,6 +42,10 @@ if ( ! class_exists( 'MetaBox_SubHeader' ) && 'plugins.php' !== $GLOBALS['pageno
 	require get_template_directory() . '/inc/class_mb_subheader.php';
 }
 
+if ( ! class_exists( 'MetaBox_ParentRedirect' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
+	require get_template_directory() . '/inc/class_mb_parent_redirect.php';
+}
+
 show_admin_bar(false);
 
 /**
@@ -178,6 +182,3 @@ function show_siblings($post_id = null){
 
 	echo $out;
 }
-
-
-
