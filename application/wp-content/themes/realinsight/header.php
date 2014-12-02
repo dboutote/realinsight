@@ -72,5 +72,8 @@
 				<?php wp_nav_menu($menu_args); ?>
 			</nav>
 		</div> <!-- /#links -->
-	</div>
-</header>
+	</div> 
+	
+<?php if( !is_front_page() ) { ?>
+	</header> 
+<?php } ?>

@@ -11,6 +11,7 @@ if (typeof jQuery === "undefined") { throw new Error("script.js requires jQuery"
 
 	/* ----- LIFE-CYCLE GRAPHIC FUNCTIONS ----- */
 	$(document).ready(function() {
+		
 		$('#lc-loan').hover(function() {
 			$('.lc-container').addClass('loan');
 		}, function() {
@@ -49,7 +50,7 @@ if (typeof jQuery === "undefined") { throw new Error("script.js requires jQuery"
 		var changeSlide = function(i) {
 			var theSlide = i;
 			setTimeout(function() {
-				$('.lc-container').css('background-image', 'url(images/life-cycle-0' + theSlide + '.png)	');
+				$('.lc-container').css('background-image', 'url(' + ri_scripts.theme_images_url + 'life-cycle-0' + theSlide + '.png)	');
 				if (theSlide == 7) {
 					theSlide = 0;
 				}

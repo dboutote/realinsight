@@ -155,7 +155,7 @@ class MetaBox_SubHeader {
 			return false;
 		}
 
-		if ( in_array( $post_type, apply_filters( 'include_promos_dont_show_list', $this->dont_show_in, $post_type ) ) ){
+		if ( in_array( $post_type, apply_filters( 'include_subheader_dont_show_list', $this->dont_show_in, $post_type ) ) ){
 			return false;
 		}
 

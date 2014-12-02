@@ -142,7 +142,7 @@ class MetaBox_PreFooter {
 			return false;
 		}
 
-		if ( in_array( $post_type, apply_filters( 'include_promos_dont_show_list', $this->dont_show_in, $post_type ) ) ){
+		if ( in_array( $post_type, apply_filters( 'include_prefoot_dont_show_list', $this->dont_show_in, $post_type ) ) ){
 			return false;
 		}
 

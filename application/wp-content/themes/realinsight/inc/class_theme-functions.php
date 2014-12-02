@@ -215,6 +215,16 @@ class Theme_Functions
 		}
 
 		wp_enqueue_script( self::THEME_PREFIX . '-main');
+		
+		#get_stylesheet_directory_uri
+		wp_localize_script(
+			self::THEME_PREFIX . '-main',
+			'ri_scripts',
+			array(
+				'ajax_url' => admin_url( 'admin-ajax.php' ),
+				'theme_images_url' => get_stylesheet_directory_uri() . '/images/'
+			)
+		);		
 	}
 
 
