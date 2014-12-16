@@ -861,6 +861,13 @@ body a img.aligncenter {
     margin-left: auto;
     margin-right: auto
 }
+div.wpcf7-validation-errors {
+background-color: #222;
+}
+div.wpcf7-mail-sent-ok {
+border: 2px solid #008bd1;
+background-color: #222;
+}
 @media only screen and (max-width: 960px) {
 .alignright, .alignleft {
     float: none !important;
