@@ -73,7 +73,11 @@ a, a:visited {
 }
 a.paper-clip:before {
 	content: '';
-	display: inline-block;
+	display: block;
+	float: left;
+	position: relative;
+	top: -8px;
+	margin-bottom: 2px;
 	vertical-align: middle;
 	width: 40px;
 	height: 40px;
@@ -478,6 +482,7 @@ ul.icon-list li {
 ul.icon-list li:first-child {
 	border-top: none;
 	padding-top: 0;
+	min-height: 112px;
 }
 ul.icon-list .btn {
 	margin-top: -15px;
