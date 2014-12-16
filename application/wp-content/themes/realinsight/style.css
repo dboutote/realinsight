@@ -465,15 +465,22 @@ ul.icon-list:not(:first-child) {
 	margin-top: 30px;
 }
 ul.icon-list h3 {
-	margin-top: 0;
+	margin-top: -18px;
+}
+ul.icon-list p {
+	margin-top: 10px;
 }
 ul.icon-list li {
 	border-top: 2px solid #dfdddd;
 	padding: 20px 0;
+	min-height: 132px;
 }
 ul.icon-list li:first-child {
 	border-top: none;
 	padding-top: 0;
+}
+ul.icon-list .btn {
+	margin-top: -15px;
 }
 .gallery {
 	margin-top: 25px;
@@ -542,7 +549,7 @@ ul.icon-list li:first-child {
 }
 .map-content {	
 	width: 474px;
-	padding: 30px;
+	padding: 10px 30px 30px 30px;
 	position: absolute;
 	top: 40px;
 	color: #707170;
