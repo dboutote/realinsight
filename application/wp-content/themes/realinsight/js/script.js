@@ -250,7 +250,7 @@ if (typeof jQuery === "undefined") { throw new Error("script.js requires jQuery"
 		
 		  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 		  
-		  var markerImage = 'images/marker.svg',
+		  var markerImage = ri_scripts.theme_images_url + 'marker.svg',
 		  myLatLng = mapLocation,
 		  mapMarker = new google.maps.Marker({
 			  position: myLatLng,
