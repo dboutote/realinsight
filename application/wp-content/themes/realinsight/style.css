@@ -13,6 +13,9 @@ Text Domain: rinsight
 * {
 	box-sizing: border-box;
 }
+html {
+	overflow-y: scroll;
+}
 body {
 	color: #707070;
 	font-family: 'Fira Sans', sans-serif;
