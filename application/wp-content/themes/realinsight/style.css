@@ -13,6 +13,9 @@ Text Domain: rinsight
 * {
 	box-sizing: border-box;
 }
+html {
+	overflow-y: scroll;
+}
 body {
 	color: #707070;
 	font-family: 'Fira Sans', sans-serif;
@@ -73,7 +76,11 @@ a, a:visited {
 }
 a.paper-clip:before {
 	content: '';
-	display: inline-block;
+	display: block;
+	float: left;
+	position: relative;
+	top: -8px;
+	margin-bottom: 2px;
 	vertical-align: middle;
 	width: 40px;
 	height: 40px;
@@ -100,7 +107,7 @@ hr {
 	display: table;
 	clear: both;
 }
-a.btn {
+.btn {
 	display: inline-block;
 	height: 46px;
 	vertical-align: top;
@@ -115,11 +122,13 @@ a.btn {
 	background-color: #8b8c8b;
 	font-style: normal;
 	margin: 0 20px 5px 0;
+	border: none;
+	cursor: pointer;
 }
-a.btn:last-child {
+.btn:last-child {
 	margin-bottom: 0;
 }
-a.btn:after {
+.btn:after {
 	content: '';
 	display: inline-block;
 	width: 34px;
@@ -131,28 +140,28 @@ a.btn:after {
 	left: 13px;
 	background: #a7a7a6 url(images/plus-btn.png) no-repeat center center;
 }
-a.btn.active:after {
+.btn.active:after {
 	background-image: url(images/minus-btn.png)
 }
-a.btn:hover, a.btn.active {
+.btn:hover, .btn.active {
 	color: #8b8c8b;
 	background-color: #fff;
 }
-a.btn.blue {
+.btn.blue {
 	color: #008bd1;
 	background-color: #fff;
 }
-a.btn.blue:after {
+.btn.blue:after {
 	background-color: #bfe2f3;
 }
-a.btn.blue:hover, a.btn.blue.active {
+.btn.blue:hover, .btn.blue.active {
 	color: #fff;
 	background-color: #008bd1;
 }
-a.btn.touch:after {
+.btn.touch:after {
 	background-image: url(images/touch-btn.png);
 }
-a.btn.video:after {
+.btn.video:after {
 	background-image: url(images/video-btn.png);
 }
 .preload {
@@ -167,6 +176,9 @@ a.btn.video:after {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
+}
+form {
+	font-weight: 500;
 }
 header, footer {
 	width: 100%;
@@ -460,15 +472,23 @@ ul.icon-list:not(:first-child) {
 	margin-top: 30px;
 }
 ul.icon-list h3 {
-	margin-top: 0;
+	margin-top: -18px;
+}
+ul.icon-list p {
+	margin-top: 10px;
 }
 ul.icon-list li {
 	border-top: 2px solid #dfdddd;
 	padding: 20px 0;
+	min-height: 132px;
 }
 ul.icon-list li:first-child {
 	border-top: none;
 	padding-top: 0;
+	min-height: 112px;
+}
+ul.icon-list .btn {
+	margin-top: -15px;
 }
 .gallery {
 	margin-top: 25px;
@@ -537,7 +557,7 @@ ul.icon-list li:first-child {
 }
 .map-content {	
 	width: 474px;
-	padding: 30px;
+	padding: 10px 30px 30px 30px;
 	position: absolute;
 	top: 40px;
 	color: #707170;
@@ -588,32 +608,33 @@ label {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color:    #252729;
 }
-input[type="radio"].css-checkbox {
-	position: absolute;
-	z-index: -1000;
-	left: -1000px;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
+.css-checkbox input[type="radio"] {
+	position: relative;
+	left: 0px;
+	top: -11px;
 	height: 1px;
 	width: 1px;
 	margin: -1px;
 	padding: 0;
 	border: 0;
+	margin-right: 15px;
 }
-input[type="radio"].css-checkbox + label.css-label {
-	padding-left: 20px;
+.css-checkbox input[type="radio"]:after {
 	height: 15px;
+	width: 15px;
 	display: inline-block;
 	line-height: 17px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	vertical-align: middle;
 	cursor: pointer;
+	content: '';
+	position: relative;
+	left: -3px;
+	top: -3px;
+	z-index: 9999999999;
 }
-input[type="radio"].css-checkbox:checked + label.css-label {
-	background-position: 0 -15px;
-}
-label.css-label {
+.css-checkbox input[type="radio"]:after {
 	background-image: url(images/radio-btn.svg);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -621,6 +642,17 @@ label.css-label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+.css-checkbox input[type="radio"]:checked:after {
+	background-position: 0 -15px;
+}
+.wpcf7-list-item-label {
+	margin-right: 20px;
+}
+.wpcf7 .btn {
+	margin: 0;
+	line-height: 29px;
+	padding-left: 20px;
 }
 .pre-footer {
 	padding: 40px 0;
@@ -710,7 +742,7 @@ header :not(.hero).container {
 #left-menu li a {
 	width: auto;
 }
-ul.icon-list a.btn {
+ul.icon-list .btn {
 	margin: 20px 0 0 0;
 }
 }
@@ -843,6 +875,13 @@ body a img.aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+div.wpcf7-validation-errors {
+background-color: #222;
+}
+div.wpcf7-mail-sent-ok {
+border: 2px solid #008bd1;
+background-color: #222;
 }
 @media only screen and (max-width: 960px) {
 .alignright, .alignleft {
