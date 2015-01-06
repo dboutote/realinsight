@@ -137,7 +137,7 @@ if (typeof jQuery === "undefined") { throw new Error("script.js requires jQuery"
 
 	/* ----- NIVO LIGHTBOX INITIALIZATION ----- */
 	$(document).ready(function() {
-		$('a.lightbox').nivoLightbox({
+		$('a.lightbox, li.lightbox > a').nivoLightbox({
 			 onPrev: function() {$('.nivo-lightbox-content').hide().fadeIn(250);},
 			 onNext: function() {$('.nivo-lightbox-content').hide().fadeIn(250);}
 		});
