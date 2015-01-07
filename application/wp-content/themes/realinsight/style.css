@@ -654,6 +654,9 @@ label {
 	line-height: 29px;
 	padding-left: 20px;
 }
+#request-demo {
+	display: none;
+}
 .pre-footer {
 	padding: 40px 0;
 	background-color: #c9c8c7;
@@ -876,6 +879,11 @@ body a img.aligncenter {
     margin-left: auto;
     margin-right: auto
 }
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
 div.wpcf7-validation-errors {
 background-color: #222;
 }
@@ -888,6 +896,11 @@ background-color: #222;
     float: none !important;
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+}
+@media only screen and (max-width: 620px) {
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
+	width: 90%;
 }
 }
 
