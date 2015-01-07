@@ -883,6 +883,9 @@ body a img.aligncenter {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	color: #707170;
+	background-color: #323435;
+	border: 3px solid rgba(37,39,41,0.5);
 }
 div.wpcf7-validation-errors {
 background-color: #222;
@@ -898,7 +901,12 @@ background-color: #222;
 	margin-right: 0 !important;
 }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 1200px) {
+.nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
+	width: 70%;
+}
+}
+@media only screen and (max-width: 760px) {
 .nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
 	width: 90%;
 }
