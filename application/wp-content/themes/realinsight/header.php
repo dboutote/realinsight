@@ -33,6 +33,8 @@
 
 <body <?php body_class(); ?>>
 
+<div id="request-demo"><?php echo do_shortcode('[contact-form-7 id="161" title="Request Demo"]'); ?></div>
+
 <div class="preload">
 	<img src="<?php echo get_stylesheet_directory_uri();?>/images/life-cycle-00.png" />
 	<img src="<?php echo get_stylesheet_directory_uri();?>/images/life-cycle-01.png" />
