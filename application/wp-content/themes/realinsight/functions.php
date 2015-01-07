@@ -182,3 +182,17 @@ function show_siblings($post_id = null){
 
 	echo $out;
 }
+
+
+
+
+function add_nivo_menuclass($atts, $item, $args) {
+	if( is_array($atts) && !empty($atts['rel']) && $atts['rel'] = 'nivo' ) {
+		$atts['class'] = 'lightbox';
+		$atts['data-lightbox-type'] = 'inline';
+	}
+	
+	return $atts;
+    
+}
+add_filter('nav_menu_link_attributes','add_nivo_menuclass', 0,3);
