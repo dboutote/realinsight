@@ -107,7 +107,7 @@ hr {
 	display: table;
 	clear: both;
 }
-.btn {
+.btn, .btn:visited {
 	display: inline-block;
 	height: 46px;
 	vertical-align: top;
