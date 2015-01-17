@@ -60,7 +60,7 @@
 					'theme_location' => 'secondary'
 				);  ?>				
 				<ul>
-					<li class="tagline"><em>Software for the Business Visionary</em></li>
+					<li class="tagline"><em>Created by asset managers for asset managers</em></li>
 					<?php wp_nav_menu($secondary_menu_args); ?>
 				</ul>
 			</div> <!-- /.top -->
