@@ -107,7 +107,7 @@ hr {
 	display: table;
 	clear: both;
 }
-.btn {
+.btn, .btn:visited {
 	display: inline-block;
 	height: 46px;
 	vertical-align: top;
@@ -659,7 +659,8 @@ label {
 }
 .pre-footer {
 	padding: 40px 0;
-	background-color: #c9c8c7;
+	background-color: #707070;
+	color: #fff;
 }
 .clients-section {
 	background-color: #414244;
