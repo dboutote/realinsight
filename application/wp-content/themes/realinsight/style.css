@@ -928,7 +928,7 @@ background-color: #222;
 /**
  * DBDB Edits
  */
-span[itemprop=telephone] a {
+span[itemprop=telephone] a, span[itemprop=terms] a {
     color: inherit;
     font-style: inherit;
     font-weight: inherit;
