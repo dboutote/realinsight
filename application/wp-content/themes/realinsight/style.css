@@ -164,6 +164,18 @@ hr {
 .btn.video:after {
 	background-image: url(images/video-btn.png);
 }
+@-moz-document url-prefix() {
+.btn, .btn:visited {
+	display: table;
+	padding: 0 20px 8px 20px;
+	float: left;
+}
+	
+.btn:after {
+	top: 10.5px;
+	left: 10px;
+}
+}
 .preload {
 	display: none;
 }
