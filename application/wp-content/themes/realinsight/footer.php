@@ -22,7 +22,7 @@
 				<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					<span itemprop="streetAddress">5215 North O'Connor Blvd, Suite 350</span>, <span itemprop="addressLocality">Irving</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">75039</span><br />
 				</span>
-				<span itemprop="telephone"><a href="tel:+18668580785">1-866.858.0785</a></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Phone: <span itemprop="telephone"><a href="tel:+19728700785">972.870.0785</a></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span itemprop="terms"><a href="/wp-content/uploads/2015/01/RI-web-terms-of-service.docx" target="_blank">Terms of Service</a></span><br />
+				<span itemprop="telephone"><a href="tel:+18668580785">1-866.858.0785</a></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Phone: <span itemprop="telephone"><a href="tel:+19728700785">972.870.0785</a></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span itemprop="terms"><a href="/terms-of-service/">Terms of Service</a></span><br />
 				&copy; CFWS Insight LLC.
 			</p>
 
