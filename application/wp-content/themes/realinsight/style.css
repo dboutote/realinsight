@@ -158,11 +158,25 @@ hr {
 	color: #fff;
 	background-color: #008bd1;
 }
+.btn.none {
+	cursor: auto;
+	margin-right: 0;
+}
+.btn.none:after {
+	display: none;
+}
+.btn.none:hover, .btn.non.active {
+	color: #fff;
+	background-color: #8b8c8b;
+}
 .btn.touch:after {
 	background-image: url(images/touch-btn.png);
 }
 .btn.video:after {
 	background-image: url(images/video-btn.png);
+}
+.btn.no-transform {
+	text-transform: none;
 }
 @-moz-document url-prefix() {
 .btn, .btn:visited {
@@ -438,7 +452,7 @@ header :not(.hero).container {
 	margin-top: 20px;
 }
 #left-menu li a, #left-menu li a:visited {
-	color: #c9c8c7;
+	color: #999;
 	padding: 12px;
 	margin: 0 4px 4px 0;
 	background-color: #fff;
