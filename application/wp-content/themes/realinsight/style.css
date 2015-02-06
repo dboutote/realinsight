@@ -438,7 +438,7 @@ header :not(.hero).container {
 	margin-top: 20px;
 }
 #left-menu li a, #left-menu li a:visited {
-	color: #c9c8c7;
+	color: #999;
 	padding: 12px;
 	margin: 0 4px 4px 0;
 	background-color: #fff;
