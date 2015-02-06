@@ -177,6 +177,9 @@ hr {
 .btn.inline {
 	display: inline-block;
 }
+.btn.no-transform {
+	text-transform: none;
+}
 @-moz-document url-prefix() {
 .btn, .btn:visited {
 	display: table;
