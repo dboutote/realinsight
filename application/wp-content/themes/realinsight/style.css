@@ -160,6 +160,7 @@ hr {
 }
 .btn.none {
 	cursor: auto;
+	margin-right: 0;
 }
 .btn.none:after {
 	display: none;
@@ -173,9 +174,6 @@ hr {
 }
 .btn.video:after {
 	background-image: url(images/video-btn.png);
-}
-.btn.inline {
-	display: inline-block;
 }
 .btn.no-transform {
 	text-transform: none;
