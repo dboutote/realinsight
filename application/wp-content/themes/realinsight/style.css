@@ -123,7 +123,6 @@ hr {
 	font-style: normal;
 	margin: 0 20px 5px 0;
 	border: none;
-	cursor: pointer;
 }
 .btn:last-child {
 	margin-bottom: 0;
@@ -158,11 +157,24 @@ hr {
 	color: #fff;
 	background-color: #008bd1;
 }
+.btn.none {
+	cursor: auto;
+}
+.btn.none:after {
+	display: none;
+}
+.btn.none:hover, .btn.non.active {
+	color: #fff;
+	background-color: #8b8c8b;
+}
 .btn.touch:after {
 	background-image: url(images/touch-btn.png);
 }
 .btn.video:after {
 	background-image: url(images/video-btn.png);
+}
+.btn.inline {
+	display: inline-block;
 }
 @-moz-document url-prefix() {
 .btn, .btn:visited {
