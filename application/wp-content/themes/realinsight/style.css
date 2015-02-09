@@ -613,6 +613,9 @@ textarea {
 	font-size: 14px;
 	color: #252729;
 	background-color: #8b8c8b;
+	height: 160px;
+}
+.nivo-lightbox-content textarea {
 	height: 100px;
 }
 input[type="radio"] {
